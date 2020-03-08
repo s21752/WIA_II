@@ -3,6 +3,7 @@
 #include <stdbool.h>
 
 const int INT_BIT_QUANTITY = 32;
+const int UNDECIMAL_SYSTEM_BASE_VALUE = 11;
 
 int main()
 {
@@ -21,28 +22,21 @@ int main()
     int index = 0;
     char result[INT_BIT_QUANTITY];
 
-    int system_indicator;
-
-    printf("Podaj dodatnia liczbe calkowita oznaczajaca system na ktory chcesz przeliczyc swoja liczbe z systemu 10-nego : \n");
-
-    fgets(line, sizeof(line), stdin);
-    sscanf(line, "%d", &system_indicator);
-
     for (int i = 0; i < sizeof(result); i++){
         result[i] = '0';
     }
 
     while(dividing_result != 0) {
-        if ((rest = dividing_result % system_indicator) > 9) {
+        if ((rest = dividing_result % UNDECIMAL_SYSTEM_BASE_VALUE) > 9) {
             result[index] = 'A' + ((rest % 9)-1);
         } else {
             result[index] = '0' + rest;
         }
-        dividing_result /= system_indicator;
+        dividing_result /= UNDECIMAL_SYSTEM_BASE_VALUE;
         index++;
     }
 
-    printf("\nTwoja liczba w systemie %d to: \n", system_indicator);
+    printf("\nTwoja liczba w systemie %d to: \n", UNDECIMAL_SYSTEM_BASE_VALUE);
 
     bool has_number_started = false;
 

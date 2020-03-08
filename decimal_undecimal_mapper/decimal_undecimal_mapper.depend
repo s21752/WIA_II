@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1583576240 source:d:\pjatk\wia\sem_ii_zjazd_2\decimal_undecimal_mapper\main.c
+1583687523 source:d:\pjatk\wia\sem_ii_zjazd_2\decimal_undecimal_mapper\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
