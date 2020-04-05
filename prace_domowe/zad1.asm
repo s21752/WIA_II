@@ -1,3 +1,4 @@
+; zadanie z wyswietleniem w 3 liniach kolejno imienia, nazwiska i ulubionego koloru
 org     100h
 
 mov dx, imie
