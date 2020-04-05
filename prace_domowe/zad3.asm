@@ -1,3 +1,4 @@
+; zadanko z nasłuchiwaniem na naciścięnie klawisza i momentalne wyświetlenie który klawisz był wciśnięty
 org     100h
 
 mov ah, 01h
