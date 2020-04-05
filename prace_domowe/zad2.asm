@@ -1,3 +1,4 @@
+; zadanie z wyświetleniem napisu "I ♥ asembler! ☺☻"
 org     100h
 
 mov dx, tekst
