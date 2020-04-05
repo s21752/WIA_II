@@ -1,3 +1,4 @@
+; zadanie z wyświetleniem imienia na środku ekranu
 org     100h
 
 mov ah, 02h
