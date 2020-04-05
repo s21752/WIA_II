@@ -1,3 +1,4 @@
+; zadanko z wyświetlaniem inicjału imienia
 org     100h
 
 mov ah, 02h
